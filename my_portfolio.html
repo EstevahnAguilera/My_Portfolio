@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estevahn Aguilera Portfolio</title>
+    <style>
+        :root {
+            --bg: #f5f6fa;
+            --bg-light: #ffffff;
+            --accent: #fff;
+            --text: #222;
+            --text-light: #555;
+            --contact-dark: #222;
+            --heading: #222;
+            --border: #e0e0e0;
+        }
+        body {
+            font-family: 'Inter', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/premium-photo/moon-gray-abstract-creative-background-design_851755-275513.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text);
+        }
+        header {
+            background: var(--bg);
+            color: var(--heading);
+            padding: 40px 0 0 0;
+        }
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: flex-start;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.25em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #222;
+            background: var(--accent);
+            border-radius: 4px;
+            padding: 2px 8px;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 24px;
+        }
+        .sidebar {
+            flex: 0 0 340px;
+            background: none;
+            border-right: none;
+            padding: 0 32px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .sidebar h1 {
+            font-size: 2.2em;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: 800;
+            white-space: nowrap;
+            text-align: left;
+        }
+        .sidebar .contact {
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        .sidebar .contact p {
+            margin: 6px 0;
+            color: var(--contact-dark);
+            font-size: 1em;
+        }
+        .sidebar .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 12px;
+            align-items: flex-start;
+        }
+        .sidebar .nav a {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .sidebar .nav a:hover {
+            color: #222;
+            background: var(--accent);
+            border-radius: 4px;
+            padding: 2px 8px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 0 0 0 48px;
+        }
+        .hero {
+            background: none;
+            color: var(--heading);
+            padding: 80px 0 40px 0;
+            text-align: left;
+        }
+        .hero h2 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 1.3em;
+            color: var(--text-light);
+        }
+        .section {
+            background: none;
+            margin: 40px 0;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+        }
+        h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            background: none;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 12px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: var(--heading);
+            font-size: 1.15em;
+        }
+        .item-date {
+            color: var(--contact-dark);
+            float: right;
+            font-size: 0.95em;
+        }
+        .item-details {
+            color: var(--text-light);
+            margin-top: 6px;
+        }
+        @media (max-width: 600px) {
+            .container, .section { padding: 12px; }
+            .hero h2 { font-size: 2em; }
+            nav {
+                gap: 16px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Estevahn Francisco Aguilera</h1>
+            <div class="contact">
+                <p><strong>Email:</strong> <a href="mailto:estevahn.aguilera@gmail.com" style="color: var(--accent);">estevahn.aguilera@gmail.com</a></p>
+                <p><strong>Phone:</strong> (209) 851-5596</p>
+                <p><strong>Location:</strong> Stockton, CA</p>
+            </div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section class="section" id="about">
+                <h2 style="padding-top:48px;">About Me</h2>
+                <div class="desc">Motivated Computer Science Student seeking a job in Data Science. Passionate about building impactful solutions and learning new technologies.</div>
+            </section>
+            <section class="section" id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><span class="item-title">University of the Pacific, Stockton CA</span> <span class="item-date">Earned: May 2025</span><br><span class="item-details">B.S. Computer Science | GPA: 3.6, Engr GPA: 3.71</span></li>
+                    <li><span class="item-title">San Joaquin Delta College, Stockton CA</span> <span class="item-date">Earned: May 2022</span><br><span class="item-details">A.A. Interdisciplinary Studies</span></li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><span class="item-title">SpeechMaster</span> <span class="item-date">Aug 2024 - May 2025</span>
+                        <ul class="item-details">
+                            <li>Co-developed AI-powered web app for real-time public speaking practice</li>
+                            <li>Led frontend development of structured, turn-based video sessions using Stream.io</li>
+                            <li>Developed responsive UI using Next.js, TypeScript, and Tailwind CSS</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Space Jam</span> <span class="item-date">Oct 2023 - Dec 2023</span>
+                        <ul class="item-details">
+                            <li>In group of 3 created a space themed game in Java in Eclipse and GitHub</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Interpreter</span> <span class="item-date">Oct 2023 - Dec 2023</span>
+                        <ul class="item-details">
+                            <li>Co-developed scanner using AST trees to identify tokens and parsers in python</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Traffic Jam</span> <span class="item-date">Sept 2023 - Oct 2023</span>
+                        <ul class="item-details">
+                            <li>Developed traffic puzzle game in Java focused on debugging</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Banking simulation</span> <span class="item-date">Apr 2023 - May 2023</span>
+                        <ul class="item-details">
+                            <li>Created bank simulator using C++ focusing on classes, vectors and debugging</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><span class="item-title">Languages:</span> <span class="item-details">C++, Java, Python, HTML, CSS, TypeScript, JavaScript, R</span></li>
+                    <li><span class="item-title">Computer:</span> <span class="item-details">Eclipse, GitHub, Microsoft Word, Excel, Replit, VSCode, RStudio</span></li>
+                    <li><span class="item-title">Bilingual</span> <span class="item-details">[English and Spanish]</span></li>
+                </ul>
+            </section>
+            <section class="section" id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li><span class="item-title">Help Desk Intern, City of Stockton, Stockton, CA</span> <span class="item-date">July 2024 - Jan 2025</span>
+                        <ul class="item-details">
+                            <li>Imaged and ran scripts on computers with required applications for departments</li>
+                            <li>Assisted via phone, remote access and troubleshooting devices on-site with technicians</li>
+                            <li>Wiped devices for disposal and participated in project meetings</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Stock Supervisor, JD Sports, Stockton, CA</span> <span class="item-date">July 2022 - Feb 2024 | Feb 2025 - Present</span>
+                        <ul class="item-details">
+                            <li>Managed, trained a team of 30 to provide best customer service</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Stock Lead, JD Sports, Modesto, CA</span> <span class="item-date">July 2022 - June 2023</span>
+                        <ul class="item-details">
+                            <li>Led a team of 5 by providing organized stocking methods</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Stock/Sales Associate, Footlocker, Modesto CA</span> <span class="item-date">Apr 2022 - July 2022</span>
+                        <ul class="item-details">
+                            <li>Assisted customers, provided great stocking skills</li>
+                        </ul>
+                    </li>
+                    <li><span class="item-title">Janitor, CC Industries, Stockton, CA</span> <span class="item-date">Feb 2021 - Oct 2021</span>
+                        <ul class="item-details">
+                            <li>Kept Areas sanitized and disinfected to prevent the spread of bacteria</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
